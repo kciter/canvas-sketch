@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/canvas-sketch/static/css/main.5650c96a.chunk.css",
+    "main.js": "/canvas-sketch/static/js/main.cff06e4e.chunk.js",
+    "main.js.map": "/canvas-sketch/static/js/main.cff06e4e.chunk.js.map",
+    "runtime-main.js": "/canvas-sketch/static/js/runtime-main.ba2efac7.js",
+    "runtime-main.js.map": "/canvas-sketch/static/js/runtime-main.ba2efac7.js.map",
+    "static/js/2.42f83962.chunk.js": "/canvas-sketch/static/js/2.42f83962.chunk.js",
+    "static/js/2.42f83962.chunk.js.map": "/canvas-sketch/static/js/2.42f83962.chunk.js.map",
+    "index.html": "/canvas-sketch/index.html",
+    "precache-manifest.3fef267aedcaca15da5637553c2d6e00.js": "/canvas-sketch/precache-manifest.3fef267aedcaca15da5637553c2d6e00.js",
+    "service-worker.js": "/canvas-sketch/service-worker.js",
+    "static/css/main.5650c96a.chunk.css.map": "/canvas-sketch/static/css/main.5650c96a.chunk.css.map",
+    "static/js/2.42f83962.chunk.js.LICENSE.txt": "/canvas-sketch/static/js/2.42f83962.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba2efac7.js",
+    "static/js/2.42f83962.chunk.js",
+    "static/css/main.5650c96a.chunk.css",
+    "static/js/main.cff06e4e.chunk.js"
+  ]
+}
