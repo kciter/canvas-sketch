@@ -2,15 +2,7 @@
 
 A web app to sketch out a [business model canvas](https://en.wikipedia.org/wiki/Business_Model_Canvas).
 
-[The app is available free online](https://sbussard.github.io/canvas-sketch/).
-
-## Enviroment
-
-`node` and `yarn`
-
-| Variable            | Required       | Value                             |
-| ------------------- | -------------- | --------------------------------- |
-| REACT_APP_GOOGLE_ANALYTICS_ID | For Production | Your Google Analytics property id |
+[The app is available free online](https://kciter.so/canvas-sketch/).
 
 ## Install
 
