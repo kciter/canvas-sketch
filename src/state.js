@@ -37,14 +37,14 @@ export const Provider = ({ children }) => {
 
   const getBlockActions = (block) => ({
     addItem: () => {
-      let item = prompt(`Enter new ${block} item`);
+      let item = prompt(`${block}을 새롭게 추가합니다`);
 
       if (!!item && item.replace(/ /g, '')) {
         updateBlock(block, (state) => [...state, item]);
       }
     },
     removeItem: (item) => {
-      if (window.confirm('Remove item?')) {
+      if (window.confirm('아이템을 삭제하시겠습니까?')) {
         updateBlock(block, (state) =>
           state.filter((_, index) => index !== item)
         );

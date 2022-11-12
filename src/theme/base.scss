@@ -47,6 +47,10 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+
+  @media print {
+    font-size: 1.2rem;
+  }
 }
 
 ul,

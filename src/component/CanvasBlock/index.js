@@ -2,15 +2,16 @@ import React, { useContext } from 'react';
 import { context } from 'state';
 import S from './style.module.scss';
 
-const renderStickyNote = (actions) => (item, index) => (
-  <li
-    className={S.item}
-    key={item}
-    item={item}
-    onClick={actions.removeItem.bind(this, index)}>
-    {item}
-  </li>
-);
+const renderStickyNote = (actions) => (item, index) =>
+  (
+    <li
+      className={S.item}
+      key={item}
+      item={item}
+      onClick={actions.removeItem.bind(this, index)}>
+      {item}
+    </li>
+  );
 
 let View = ({ Icon, name, items, actions }) => (
   <div className={S.container}>
@@ -21,7 +22,7 @@ let View = ({ Icon, name, items, actions }) => (
     <ol className={S.items}>{items.map(renderStickyNote(actions))}</ol>
     <footer className={S.footer}>
       <button className={S.button} onClick={actions.addItem}>
-        Add
+        추가하기
       </button>
     </footer>
   </div>

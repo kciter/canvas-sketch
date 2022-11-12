@@ -85,11 +85,15 @@
 .button {
   cursor: pointer;
   border: 0;
-  color: var(--gray);
+  // color: var(--gray);
   outline: none;
   background: transparent;
 
   &:hover {
     color: var(--blue);
+  }
+
+  @media print {
+    display: none;
   }
 }

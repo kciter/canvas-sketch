@@ -71,13 +71,13 @@
   padding: 1em;
   background: var(--gray-xlight);
 
-  @include VerticalList;
+  @include BusinessModelCanvas;
 
-  @include min-width(600px) {
-    @include TwoColumns;
-  }
+  // @include min-width(600px) {
+  //   @include TwoColumns;
+  // }
 
-  @include min-width(1000px) {
-    @include BusinessModelCanvas;
-  }
+  // @include min-width(400px) {
+  //   @include VerticalList;
+  // }
 }
