@@ -23,6 +23,11 @@ const loadCanvas = () =>
     ? JSON.parse(decodeURIComponent(escape(atob(localStorage.canvas))))
     : blankCanvas;
 
+const clearCanvas = () =>
+  (localStorage.canvas = btoa(
+    unescape(encodeURIComponent(JSON.stringify(blankCanvas)))
+  ));
+
 export const context = createContext('canvas');
 export const Provider = ({ children }) => {
   const [state, setState] = useState(loadCanvas());
@@ -52,9 +57,17 @@ export const Provider = ({ children }) => {
     }
   });
 
+  const clearItems = () => {
+    if (window.confirm('모든 아이템을 삭제하시겠습니까?')) {
+      clearCanvas();
+      setState(loadCanvas());
+    }
+  };
+
   const value = {
     state,
-    getBlockActions
+    getBlockActions,
+    clearItems
   };
 
   return <context.Provider value={value} children={children} />;

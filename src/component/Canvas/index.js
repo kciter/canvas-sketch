@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import CanvasBlock from 'component/CanvasBlock';
 import ClipboardIcon from 'component/icon/Clipboard';
 import FeedIcon from 'component/icon/Feed';
@@ -9,6 +9,7 @@ import PaintRollerIcon from 'component/icon/PaintRoller';
 import PeopleIcon from 'component/icon/People';
 import PriceTagIcon from 'component/icon/PriceTag';
 import SmileyFaceIcon from 'component/icon/SmileyFace';
+import { context } from 'state';
 import S from './style.module.scss';
 
 let names = [
@@ -39,6 +40,14 @@ const renderBlock = (block, index) => (
   <CanvasBlock name={block} Icon={icons[index]} key={block} />
 );
 
-export default () => (
-  <div className={S.container}>{names.map(renderBlock)}</div>
-);
+export default () => {
+  const { clearItems } = useContext(context);
+  return (
+    <div className={S.container}>
+      {names.map(renderBlock)}
+      <button className={S.button} onClick={clearItems}>
+        전체삭제
+      </button>
+    </div>
+  );
+};
